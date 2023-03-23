@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Animation
+  m_Name: wallking
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -40,10 +40,8 @@ AnimationClip:
     - time: 0.75
       value: {fileID: 42419254, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     - time: 0.8333333
-      value: {fileID: 1183292198, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
-    - time: 0.9166667
       value: {fileID: 1159302324, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
-    - time: 1
+    - time: 0.9166667
       value: {fileID: -92907243, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     attribute: m_Sprite
     path: 
@@ -74,7 +72,6 @@ AnimationClip:
     - {fileID: 2106370290, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     - {fileID: 1724952344, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     - {fileID: 42419254, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
-    - {fileID: 1183292198, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     - {fileID: 1159302324, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
     - {fileID: -92907243, guid: 055f15b39f9a1514a915e64a6b5fc04d, type: 3}
   m_AnimationClipSettings:
@@ -82,7 +79,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0833334
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

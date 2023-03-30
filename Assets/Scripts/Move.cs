@@ -21,7 +21,7 @@ public class Move : MonoBehaviour
     void Update()
     {
         rgb.velocity = new Vector2(Speed * Dir, rgb.velocity.y);
-       // Anim.SetInteger("Speed", Dir);
+        Anim.SetInteger("Speed", Dir);
         if (Dir >= 0) { sprite.flipX = false; }
         if (Dir < 0) { sprite.flipX = true; }
         

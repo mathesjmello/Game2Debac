@@ -21,18 +21,22 @@ public class Move : MonoBehaviour
     void Update()
     {
         rgb.velocity = new Vector2(Speed * Dir, rgb.velocity.y);
-        Anim.SetInteger("Speed", Dir);
-        if (Dir >= 0) { sprite.flipX = false; }
-        if (Dir < 0) { sprite.flipX = true; }
         
+        if (Dir > 0) { sprite.flipX = false; }
+        if (Dir < 0) { sprite.flipX = true; }
+
+       
         if (Input.GetMouseButton(0))
         {
+            // coloque codigo para mudar a nimação para sentando
+            Anim.SetBool("walk", true);
             newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             inComing = true;
             
         }
         if (Input.GetMouseButtonUp(0))
         {
+            Anim.SetBool("walk", false);
             inComing = false;
             Dir = 0;
         }
@@ -46,6 +50,7 @@ public class Move : MonoBehaviour
 
             if (transform.position.x > newPos.x - .8f && transform.position.x < newPos.x + .8f)
             {
+                Anim.SetBool("walk", false);
                 Dir = 0;
             }
         }

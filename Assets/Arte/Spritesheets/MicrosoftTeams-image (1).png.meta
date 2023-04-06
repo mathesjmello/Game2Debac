@@ -108,10 +108,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1238
-        width: 1024
-        height: 810
+        x: 143
+        y: 1240
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_1
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1238
-        width: 1024
-        height: 810
+        x: 1131
+        y: 1240
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_2
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1238
-        width: 1024
-        height: 810
+        x: 2119
+        y: 1240
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_3
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 1238
-        width: 1024
-        height: 810
+        x: 3107
+        y: 1240
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 214
-        width: 1024
-        height: 810
+        x: 143
+        y: 216
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_5
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 214
-        width: 1024
-        height: 810
+        x: 1131
+        y: 216
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_6
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 214
-        width: 1024
-        height: 810
+        x: 2119
+        y: 216
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: MicrosoftTeams-image (1)_7
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 214
-        width: 1024
-        height: 810
+        x: 3107
+        y: 216
+        width: 669.25
+        height: 808
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

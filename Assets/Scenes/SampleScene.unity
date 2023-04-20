@@ -506,7 +506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216234334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: -4.96, z: 0}
+  m_LocalPosition: {x: 2.02, y: -4.96, z: 0}
   m_LocalScale: {x: 0.6934, y: 0.6934, z: 0.6934}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -547,10 +547,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b88842e5b45e419f8f21dacf9bc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inComing: 0
   rgb: {fileID: 216234338}
   Speed: 5
   sprite: {fileID: 216234336}
   Anim: {fileID: 216234335}
+  wall: 0
 --- !u!70 &216234340
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -567,6 +569,77 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0009179665, y: 3.3899868}
   m_Size: {x: 1.8181632, y: 6.7799735}
   m_Direction: 0
+--- !u!1 &228055580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228055581}
+  - component: {fileID: 228055583}
+  - component: {fileID: 228055582}
+  m_Layer: 0
+  m_Name: camerablock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228055581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228055580}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 820270643}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &228055582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228055580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29d8dab9ee9b274480e5105e0d05f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &228055583
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228055580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.3274674, y: 0.54602575}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.7357645, y: 9.312934}
+  m_EdgeRadius: 0
 --- !u!1 &283349824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,8 +1380,9 @@ GameObject:
   m_Component:
   - component: {fileID: 820270643}
   - component: {fileID: 820270644}
+  - component: {fileID: 820270645}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: parede esquerda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1325,7 +1399,8 @@ Transform:
   m_LocalPosition: {x: 18.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 228055581}
   m_Father: {fileID: 1592331327}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1355,6 +1430,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7033024, y: 6.233764}
   m_EdgeRadius: 0
+--- !u!114 &820270645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820270642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c4da34d944e4d4c8cbf0d80db47971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825549951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,7 +2205,7 @@ GameObject:
   - component: {fileID: 1316629943}
   - component: {fileID: 1316629942}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: camerablock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2717,6 +2804,7 @@ Transform:
   m_Children:
   - {fileID: 1966973510}
   - {fileID: 820270643}
+  - {fileID: 1928115238}
   m_Father: {fileID: 831687469}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2856,6 +2944,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1928115237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928115238}
+  - component: {fileID: 1928115239}
+  m_Layer: 0
+  m_Name: porta banheiro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928115238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928115237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.7, y: -1.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1592331327}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1928115239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928115237}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.086677074, y: 0.13479006}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1483488, y: 3.9457219}
+  m_EdgeRadius: 0
 --- !u!1 &1966973509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,8 +3012,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1966973510}
   - component: {fileID: 1966973511}
+  - component: {fileID: 1966973512}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: parede direita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2915,6 +3062,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7033024, y: 6.233764}
   m_EdgeRadius: 0
+--- !u!114 &1966973512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966973509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c4da34d944e4d4c8cbf0d80db47971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1985429922
 GameObject:
   m_ObjectHideFlags: 0

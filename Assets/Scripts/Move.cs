@@ -5,12 +5,13 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     private Vector3 newPos; // salva a posiçao do click quando acontece
-    private bool inComing; // salva o status do personagem se movendo
+    public bool inComing; // salva o status do personagem se movendo
     public Rigidbody2D rgb; // fisicas do corpo do personagem
     public float Speed = 5; // velocidade de movimentaçao
     public static int Dir;   // direçao em que o personagem esta andando
     public SpriteRenderer sprite;
     public Animator Anim;
+    public bool wall;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +26,17 @@ public class Move : MonoBehaviour
         if (Dir > 0) { sprite.flipX = false; }
         if (Dir < 0) { sprite.flipX = true; }
 
-       
         if (Input.GetMouseButton(0))
         {
             // coloque codigo para mudar a nimação para sentando
-            Anim.SetBool("walk", true);
+            WallControl(true);
             newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             inComing = true;
             
         }
         if (Input.GetMouseButtonUp(0))
         {
-            Anim.SetBool("walk", false);
+            WallControl(false);
             inComing = false;
             Dir = 0;
         }
@@ -50,9 +50,18 @@ public class Move : MonoBehaviour
 
             if (transform.position.x > newPos.x - .8f && transform.position.x < newPos.x + .8f)
             {
-                Anim.SetBool("walk", false);
-                Dir = 0;
+                WallControl(false);
             }
         }
     }
+
+    void WallControl(bool w){
+        if(wall){
+        Anim.SetBool("walk", false);
+        Dir = 0;
+        return;
+        }
+        Anim.SetBool("walk", w);
+    }
+    
 }

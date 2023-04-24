@@ -1,67 +1,66 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    private Vector3 newPos; // salva a posiçao do click quando acontece
-    public bool inComing; // salva o status do personagem se movendo
+    private Vector3 _newPos; // salva a posiçao do click quando acontece
     public Rigidbody2D rgb; // fisicas do corpo do personagem
-    public float Speed = 5; // velocidade de movimentaçao
-    public static int Dir;   // direçao em que o personagem esta andando
+    public float speed = 5; // velocidade de movimentaçao
+    private static Vector2 _dir;   // direçao em que o personagem esta andando
     public SpriteRenderer sprite;
-    public Animator Anim;
-    public bool wall;
-    // Start is called before the first frame update
-    void Start()
+    public Animator anim;
+    private PlayerInputActions _inputActions;
+
+    private void Awake()
     {
-        Dir = 0;
+        _inputActions = new PlayerInputActions();
+        _inputActions.Player1.Enable();
+        _inputActions.Player1.WalkMouse.performed += WalkClick;
+        _inputActions.Player1.WalkMouse.canceled += StopWalk;
+        _inputActions.Player1.Walk.performed += Walk;
+        _inputActions.Player1.Walk.canceled += StopWalk;
+        
+        _dir = Vector2.zero;
+    }
+
+    private void StopWalk(InputAction.CallbackContext obj)
+    {
+        _dir = Vector2.zero;
+        AnimControl(false);
+    }
+
+    private void Walk(InputAction.CallbackContext obj)
+    {
+        Vector2 inputVec = _inputActions.Player1.Walk.ReadValue<Vector2>();
+        _dir = inputVec;
+        AnimControl(true);
+    }
+
+    private void WalkClick(InputAction.CallbackContext obj)
+    {
+        AnimControl(true);
+        _newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (transform.position.x < _newPos.x)
+        { _dir = Vector2.right; }
+        if (transform.position.x > _newPos.x)
+        { _dir = Vector2.left;  }
     }
 
     // Update is called once per frame
     void Update()
     {
-        rgb.velocity = new Vector2(Speed * Dir, rgb.velocity.y);
+        rgb.velocity = _dir * speed;
         
-        if (Dir > 0) { sprite.flipX = false; }
-        if (Dir < 0) { sprite.flipX = true; }
-
-        if (Input.GetMouseButton(0))
-        {
-            // coloque codigo para mudar a nimação para sentando
-            WallControl(true);
-            newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            inComing = true;
-            
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            WallControl(false);
-            inComing = false;
-            Dir = 0;
-        }
-        if (inComing)
-        {
-            if (transform.position.x < newPos.x)
-            { Dir = 1; }
-
-            if (transform.position.x > newPos.x)
-            { Dir =-1;  }
-
-            if (transform.position.x > newPos.x - .8f && transform.position.x < newPos.x + .8f)
-            {
-                WallControl(false);
-            }
-        }
+        if (_dir == Vector2.right) { sprite.flipX = false; } 
+        if (_dir == Vector2.left) { sprite.flipX = true; }
+        
     }
 
-    void WallControl(bool w){
-        if(wall){
-        Anim.SetBool("walk", false);
-        Dir = 0;
-        return;
-        }
-        Anim.SetBool("walk", w);
+    public void AnimControl(bool w){
+        anim.SetBool("walk", w);
     }
     
 }

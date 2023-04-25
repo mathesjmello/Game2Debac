@@ -11,11 +11,12 @@ public class Move : MonoBehaviour
     public float speed = 5; // velocidade de movimentaçao
     private static Vector2 _dir;   // direçao em que o personagem esta andando
     public SpriteRenderer sprite;
-    public Animator anim;
+    private Animator _anim;
     private PlayerInputActions _inputActions;
 
     private void Awake()
     {
+        _anim = GetComponent<Animator>();
         _inputActions = new PlayerInputActions();
         _inputActions.Player1.Enable();
         _inputActions.Player1.WalkMouse.performed += WalkClick;
@@ -60,7 +61,7 @@ public class Move : MonoBehaviour
     }
 
     public void AnimControl(bool w){
-        anim.SetBool("walk", w);
+        _anim.SetBool("walk", w);
     }
     
 }

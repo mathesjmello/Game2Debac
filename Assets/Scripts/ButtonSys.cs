@@ -1,28 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonSys : MonoBehaviour
 {
     Button btn;
-    public GameObject painel;
-    // Start is called before the first frame update
+    public Door door;
     void Start()
     {
         btn = gameObject.GetComponent<Button>();
-        btn.onClick.AddListener(ClickDoBotão);
+        btn.onClick.AddListener(Click);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Click (){
 
-    void ClickDoBotão (){
-
-        painel.SetActive(true);
-        gameObject.SetActive(false);
+        if (door != null)
+        {
+            door.Interaction();
+        }
     }
 }

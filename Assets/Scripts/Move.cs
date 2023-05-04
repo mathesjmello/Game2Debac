@@ -13,9 +13,11 @@ public class Move : MonoBehaviour
     public SpriteRenderer sprite;
     private Animator _anim;
     private PlayerInputActions _inputActions;
+    
 
     private void Awake()
     {
+        
         _anim = GetComponent<Animator>();
         _inputActions = new PlayerInputActions();
         _inputActions.Player1.Enable();
@@ -23,9 +25,9 @@ public class Move : MonoBehaviour
         _inputActions.Player1.WalkMouse.canceled += StopWalk;
         _inputActions.Player1.Walk.performed += Walk;
         _inputActions.Player1.Walk.canceled += StopWalk;
-        
         _dir = Vector2.zero;
     }
+
 
     private void StopWalk(InputAction.CallbackContext obj)
     {
@@ -54,7 +56,6 @@ public class Move : MonoBehaviour
     void Update()
     {
         rgb.velocity = _dir * speed;
-        
         if (_dir == Vector2.right) { sprite.flipX = false; } 
         if (_dir == Vector2.left) { sprite.flipX = true; }
         

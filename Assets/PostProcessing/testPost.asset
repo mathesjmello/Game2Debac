@@ -58,8 +58,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   colorFilter:
-    overrideState: 0
-    value: {r: 1, g: 1, b: 1, a: 1}
+    overrideState: 1
+    value: {r: 0.6698113, g: 0.42653078, b: 0.42653078, a: 1}
   hueShift:
     overrideState: 0
     value: 0
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.67
+    value: 0.676
   fastMode:
     overrideState: 1
     value: 0

@@ -115,7 +115,7 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 0, y: 0}
-  - name: Camada 7
+  - name: Camada 32
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -126,7 +126,7 @@ ScriptedImporter:
       y: 1092
       width: 3394
       height: 1080
-    spriteID: 8ff7e7c8c4bc92642a0abef33b22ab31
+    spriteID: 18b22d34c4ff93a49ad378415869ffa3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -231,6 +231,26 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Back_Unity copiar
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 88375b80928034b449a806b04de83c42
+    layerID: 101
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Camada 32
+    spriteName: Camada 32
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 18b22d34c4ff93a49ad378415869ffa3
+    layerID: 100
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Back_Unity
     spriteName: 
     isGroup: 1
@@ -240,16 +260,16 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
-  - name: Camada 7
-    spriteName: Camada 7
+    isVisible: 0
+  - name: Camada 32
+    spriteName: Camada 32
     isGroup: 0
-    parentIndex: 2
-    spriteID: 8ff7e7c8c4bc92642a0abef33b22ab31
-    layerID: 92
+    parentIndex: 4
+    spriteID: c6ac600b647fc454d918162ed79c6838
+    layerID: 98
     mosaicPosition: {x: 4, y: 1092}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Front
     spriteName: 
@@ -264,7 +284,7 @@ ScriptedImporter:
   - name: Camada 3
     spriteName: 
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 6
     spriteID: 274d88a08c38ce04bb1d6867687e2d97
     layerID: 9
     mosaicPosition: {x: 0, y: 0}
@@ -284,7 +304,7 @@ ScriptedImporter:
   - name: Camada 7
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 70e23f3b6abab9646a8c28456338e91d
     layerID: 25
     mosaicPosition: {x: 0, y: 0}
@@ -294,7 +314,7 @@ ScriptedImporter:
   - name: Camada 9
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 08b622b709804594e9a4439968e252c5
     layerID: 27
     mosaicPosition: {x: 0, y: 0}
@@ -304,7 +324,7 @@ ScriptedImporter:
   - name: Camada 10
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: cb53eb443374659459e0a7fcba8bfe50
     layerID: 28
     mosaicPosition: {x: 0, y: 0}
@@ -314,7 +334,7 @@ ScriptedImporter:
   - name: Camada 16
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: fac05f3c6c273874fb22cfb2096ef30e
     layerID: 34
     mosaicPosition: {x: 0, y: 0}
@@ -324,7 +344,7 @@ ScriptedImporter:
   - name: Camada 17
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 90c9c1ef8945f734397455c8c06066b7
     layerID: 35
     mosaicPosition: {x: 0, y: 0}
@@ -334,7 +354,7 @@ ScriptedImporter:
   - name: Camada 20
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 79c1fe38b46035e4b9e8be1947a6d895
     layerID: 38
     mosaicPosition: {x: 0, y: 0}
@@ -344,7 +364,7 @@ ScriptedImporter:
   - name: Camada 19
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: d602ad2e5a1ab484c8ba9b9dbbeef248
     layerID: 37
     mosaicPosition: {x: 0, y: 0}
@@ -354,7 +374,7 @@ ScriptedImporter:
   - name: Camada 18
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: a1e50d40aae37f8408b2facddabadca0
     layerID: 36
     mosaicPosition: {x: 0, y: 0}
@@ -364,7 +384,7 @@ ScriptedImporter:
   - name: Camada 22
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: ed85354174e7c9447a8c98b320fe8469
     layerID: 40
     mosaicPosition: {x: 0, y: 0}
@@ -374,7 +394,7 @@ ScriptedImporter:
   - name: Camada 21
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: b9102fb58a614154e8b767a20d40b75c
     layerID: 39
     mosaicPosition: {x: 0, y: 0}
@@ -384,7 +404,7 @@ ScriptedImporter:
   - name: Camada 15
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: b866010e37bbe00409fc7ab5f8262a70
     layerID: 33
     mosaicPosition: {x: 0, y: 0}
@@ -394,7 +414,7 @@ ScriptedImporter:
   - name: Camada 14
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: c1afac4fd4f8d994f85c285e071b5ab5
     layerID: 32
     mosaicPosition: {x: 0, y: 0}
@@ -404,7 +424,7 @@ ScriptedImporter:
   - name: Camada 11
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 40f502e28e603cd43af4556efb442f6f
     layerID: 29
     mosaicPosition: {x: 0, y: 0}
@@ -414,7 +434,7 @@ ScriptedImporter:
   - name: Camada 23
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 349f0be9cb50e0a459bd19d74a7e5eac
     layerID: 41
     mosaicPosition: {x: 0, y: 0}
@@ -424,7 +444,7 @@ ScriptedImporter:
   - name: Camada 28
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 35025fea612d9f34993463707e266b57
     layerID: 46
     mosaicPosition: {x: 0, y: 0}
@@ -434,7 +454,7 @@ ScriptedImporter:
   - name: Camada 27
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: f74e65416bef57a45a15b02a949ea36d
     layerID: 45
     mosaicPosition: {x: 0, y: 0}
@@ -444,7 +464,7 @@ ScriptedImporter:
   - name: Camada 25
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 027c49dad20794942b1aebb1aea7d9b9
     layerID: 43
     mosaicPosition: {x: 0, y: 0}
@@ -454,7 +474,7 @@ ScriptedImporter:
   - name: Camada 24
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 8f198805e6e3b7d4798872dbc4528e11
     layerID: 42
     mosaicPosition: {x: 0, y: 0}
@@ -464,7 +484,7 @@ ScriptedImporter:
   - name: Camada 29
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: f3e4dd585bfe89a42a0e81d1adb29ec0
     layerID: 47
     mosaicPosition: {x: 0, y: 0}
@@ -474,7 +494,7 @@ ScriptedImporter:
   - name: Camada 1
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: ab48ceb7d1a6bf0428d3b5c27ac26fcd
     layerID: 2
     mosaicPosition: {x: 0, y: 0}
@@ -484,7 +504,7 @@ ScriptedImporter:
   - name: Camada 6
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 7ce2969c98169a44185f77158aec8f27
     layerID: 24
     mosaicPosition: {x: 0, y: 0}
@@ -494,7 +514,7 @@ ScriptedImporter:
   - name: Camada 8
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 23381182c2ed2134f99337858106a0ba
     layerID: 26
     mosaicPosition: {x: 0, y: 0}
@@ -504,7 +524,7 @@ ScriptedImporter:
   - name: Camada 5
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: bedfa354135c0cd44b93fedfe6987b55
     layerID: 23
     mosaicPosition: {x: 0, y: 0}
@@ -514,7 +534,7 @@ ScriptedImporter:
   - name: Camada 26
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: a57002dc5deaba141b1e79aa55d4afe8
     layerID: 44
     mosaicPosition: {x: 0, y: 0}
@@ -524,7 +544,7 @@ ScriptedImporter:
   - name: Camada 4
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 5378763dc417d3f4daf7383a5aa6c62f
     layerID: 22
     mosaicPosition: {x: 0, y: 0}
@@ -534,7 +554,7 @@ ScriptedImporter:
   - name: Camada 2
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 13773578e905a224fa9a16190b8cc2bb
     layerID: 5
     mosaicPosition: {x: 0, y: 0}
@@ -544,7 +564,7 @@ ScriptedImporter:
   - name: Camada 13
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: 21e78abe3a73ecc47aa9cf8f4ec484d2
     layerID: 31
     mosaicPosition: {x: 0, y: 0}
@@ -554,7 +574,7 @@ ScriptedImporter:
   - name: Camada 0
     spriteName: 
     isGroup: 0
-    parentIndex: 6
+    parentIndex: 8
     spriteID: e9b38e193749baa44b41a218181a1a87
     layerID: 55
     mosaicPosition: {x: 0, y: 0}

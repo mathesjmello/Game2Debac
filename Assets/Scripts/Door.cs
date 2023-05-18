@@ -22,6 +22,7 @@ namespace DefaultNamespace
         private void OnTriggerExit2D(Collider2D other)
         {
             Btn.gameObject.SetActive(false);
+            Btn.door = null;
         }
 
         public void Interaction()

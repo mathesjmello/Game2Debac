@@ -6,7 +6,11 @@ public class CameraWall : MonoBehaviour
 {
 private Move player;
 private Camera camera;
-    // Start is called before the first frame update
+
+public bool varanda;
+
+public Transform varandaObj;
+// Start is called before the first frame update
     void Start()
     {
         camera = FindObjectOfType<Camera>();
@@ -20,10 +24,22 @@ private Camera camera;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if (varanda)
+        {
+            camera.transform.SetParent(varandaObj);
+            camera.transform.localPosition = new Vector3(0, 5.28f, -1);
+            player.transform.localScale = new Vector3(0.23f, 0.23f, 0.23f);
+            return;
+        }
         camera.transform.SetParent(null);
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         camera.transform.SetParent(player.transform);
+        if (varanda)
+        {
+            camera.transform.localPosition = new Vector3(0, 5.5f, -10);
+            player.transform.localScale = new Vector3(0.62f, 0.62f, 0.62f);
+        }
     }
 }

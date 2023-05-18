@@ -25,13 +25,11 @@ private void Awake() {
     }
 
     private void EClick(InputAction.CallbackContext obj){
-        Debug.Log("entrou no input");
         Click();
     }
 
     void Click (){
 
-Debug.Log("clicou na porta");
         if (door != null)
         {
             door.Interaction();

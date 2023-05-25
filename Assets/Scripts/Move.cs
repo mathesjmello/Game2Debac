@@ -39,12 +39,14 @@ public class Move : MonoBehaviour
     {
         Vector2 inputVec = _inputActions.Player1.Walk.ReadValue<Vector2>();
         _dir = inputVec;
+       // audio.Play(0);
         AnimControl(true);
     }
 
     private void WalkClick(InputAction.CallbackContext obj)
     {
         AnimControl(true);
+        
         _newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (transform.position.x < _newPos.x)
         { _dir = Vector2.right; }

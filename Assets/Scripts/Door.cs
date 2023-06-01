@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -27,6 +28,7 @@ namespace DefaultNamespace
 
         public void Interaction()
         {
+
             Bootstrap.Instance.RM.ChangeRoom(NextRoom);
         }
     }

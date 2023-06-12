@@ -10,7 +10,7 @@ public class ButtonSys : MonoBehaviour
     Button btn;
     public Door door;
     private PlayerInputActions _inputActions;
-
+    public GameObject fade;
 private void Awake() {
     _inputActions = new PlayerInputActions();
     _inputActions.Player1.Enable();
@@ -32,7 +32,10 @@ private void Awake() {
 
         if (door != null)
         {
+            fade.SetActive(true);
             door.Interaction();
+            
         }
     }
+    
 }

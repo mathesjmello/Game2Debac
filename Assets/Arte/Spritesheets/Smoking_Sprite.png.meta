@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: 2d022d44bcca7d148b4a52442255a245
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Smoking_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 3279
+        width: 241
+        height: 666
+      alignment: 9
+      pivot: {x: 0.2473651, y: 0.03328194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5067d7fa5bfa32944a62784e733366be
+      internalID: -930313865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 3279
+        width: 292
+        height: 666
+      alignment: 9
+      pivot: {x: 0.19574308, y: 0.036746096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1199874b379218446b4e762a989058bb
+      internalID: -233700887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 3279
+        width: 310
+        height: 666
+      alignment: 9
+      pivot: {x: 0.19883049, y: 0.034944367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33b541f5c421fd4ba8941990eb96694
+      internalID: 401663333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2279
+        width: 304
+        height: 666
+      alignment: 9
+      pivot: {x: 0.1860472, y: 0.032627597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5f8842c9c6ee840ad27545195c5201
+      internalID: -777907971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 2281
+        width: 302
+        height: 668
+      alignment: 9
+      pivot: {x: 0.18396764, y: 0.025908876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dff590a15ab31468e9512149302573
+      internalID: -1940103812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 2281
+        width: 274
+        height: 668
+      alignment: 9
+      pivot: {x: 0.20312946, y: 0.027532702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34d6bae8a2ff194bb59fe5c30d0aacc
+      internalID: -498195177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 2281
+        width: 247
+        height: 668
+      alignment: 9
+      pivot: {x: 0.22776046, y: 0.029156165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13bf792e224a074b8c6b88f58bd8e42
+      internalID: -394935579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1281
+        width: 188
+        height: 668
+      alignment: 9
+      pivot: {x: 0.30332947, y: 0.028682321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7468228d14ed21843903e24cf028a872
+      internalID: 1027453058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1281
+        width: 188
+        height: 668
+      alignment: 9
+      pivot: {x: 0.3137889, y: 0.030084668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbac96e3d61857e41a8755fc53eb01ca
+      internalID: -18085490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 1281
+        width: 188
+        height: 664
+      alignment: 9
+      pivot: {x: 0.2984905, y: 0.028011275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83acfaaa1075eeb4a816a0b9eb44d60e
+      internalID: 100066813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 1281
+        width: 192
+        height: 662
+      alignment: 9
+      pivot: {x: 0.2976748, y: 0.030554641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91454a6e7ece0544af4f4696f0dd9e6
+      internalID: 1096111877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoking_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 281
+        width: 192
+        height: 662
+      alignment: 9
+      pivot: {x: 0.30635133, y: 0.028221983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35710bdcb6a690489076e96accb6637
+      internalID: 806083336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Smoking_Sprite_0: -930313865
+      Smoking_Sprite_1: -233700887
+      Smoking_Sprite_10: 1096111877
+      Smoking_Sprite_11: 806083336
+      Smoking_Sprite_2: 401663333
+      Smoking_Sprite_3: -777907971
+      Smoking_Sprite_4: -1940103812
+      Smoking_Sprite_5: -498195177
+      Smoking_Sprite_6: -394935579
+      Smoking_Sprite_7: 1027453058
+      Smoking_Sprite_8: -18085490
+      Smoking_Sprite_9: 100066813
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

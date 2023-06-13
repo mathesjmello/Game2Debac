@@ -38,7 +38,7 @@ public Transform varandaObj;
         camera.transform.SetParent(player.transform);
         if (varanda)
         {
-            camera.transform.localPosition = new Vector3(0, 5.5f, -10);
+            camera.transform.localPosition = new Vector3(0, 6.5f, -10);
             player.transform.localScale = new Vector3(0.62f, 0.62f, 0.62f);
         }
     }

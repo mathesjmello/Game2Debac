@@ -12,7 +12,9 @@ public class Move : MonoBehaviour
     private static Vector2 _dir;   // direçao em que o personagem esta andando
     public SpriteRenderer sprite;
     private Animator _anim;
+    private bool fumando;
     private PlayerInputActions _inputActions;
+    public Tocador ligtherSound;
     
 
     private void Awake()
@@ -25,7 +27,18 @@ public class Move : MonoBehaviour
         _inputActions.Player1.WalkMouse.canceled += StopWalk;
         _inputActions.Player1.Walk.performed += Walk;
         _inputActions.Player1.Walk.canceled += StopWalk;
+        _inputActions.Player1.Q.started += StarSmoking;
         _dir = Vector2.zero;
+    }
+
+    private void StarSmoking(InputAction.CallbackContext obj)
+    {
+        fumando =!fumando;
+        _anim.SetBool("smoking", fumando);
+        if (fumando)
+        {
+            ligtherSound.Playsound();
+        }
     }
 
 

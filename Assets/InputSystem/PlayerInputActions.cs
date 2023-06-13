@@ -53,6 +53,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Q"",
+                    ""type"": ""Button"",
+                    ""id"": ""1b89fb82-94bb-4d9d-ba79-db426580dc88"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -113,6 +122,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""2ce7b4cd-a0ac-4bbd-bfab-50e8d7f132f9"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyboard"",
+                    ""action"": ""Q"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""18604820-2850-4136-a62c-40c2feaa3907"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -166,6 +186,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player1_Walk = m_Player1.FindAction("Walk", throwIfNotFound: true);
         m_Player1_WalkMouse = m_Player1.FindAction("WalkMouse", throwIfNotFound: true);
         m_Player1_E = m_Player1.FindAction("E", throwIfNotFound: true);
+        m_Player1_Q = m_Player1.FindAction("Q", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -230,6 +251,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player1_Walk;
     private readonly InputAction m_Player1_WalkMouse;
     private readonly InputAction m_Player1_E;
+    private readonly InputAction m_Player1_Q;
     public struct Player1Actions
     {
         private @PlayerInputActions m_Wrapper;
@@ -237,6 +259,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Walk => m_Wrapper.m_Player1_Walk;
         public InputAction @WalkMouse => m_Wrapper.m_Player1_WalkMouse;
         public InputAction @E => m_Wrapper.m_Player1_E;
+        public InputAction @Q => m_Wrapper.m_Player1_Q;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -255,6 +278,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @E.started += instance.OnE;
             @E.performed += instance.OnE;
             @E.canceled += instance.OnE;
+            @Q.started += instance.OnQ;
+            @Q.performed += instance.OnQ;
+            @Q.canceled += instance.OnQ;
         }
 
         private void UnregisterCallbacks(IPlayer1Actions instance)
@@ -268,6 +294,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @E.started -= instance.OnE;
             @E.performed -= instance.OnE;
             @E.canceled -= instance.OnE;
+            @Q.started -= instance.OnQ;
+            @Q.performed -= instance.OnQ;
+            @Q.canceled -= instance.OnQ;
         }
 
         public void RemoveCallbacks(IPlayer1Actions instance)
@@ -317,5 +346,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnWalk(InputAction.CallbackContext context);
         void OnWalkMouse(InputAction.CallbackContext context);
         void OnE(InputAction.CallbackContext context);
+        void OnQ(InputAction.CallbackContext context);
     }
 }
